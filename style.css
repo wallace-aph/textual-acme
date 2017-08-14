@@ -330,8 +330,6 @@ body div[ltype*=privmsg] .sender {
 
 body div.line[ltype*=action] {
  	padding: 2px 5px 2px 5px;
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;
 	background-color: none;
 }
 
