@@ -169,7 +169,6 @@ a:hover {
 #topic_bar span.channel {
 	color: #FFFFFF;
 	border-color: #FFFFFF;
-	text-shadow: 1px 1px rgba(83, 86, 94, 0.7);
 }
 
 /* Images */
@@ -198,7 +197,6 @@ a:hover {
 	display: inline-block;
 	line-height: 14px;
 	font-size: 15px;
-	font-family: "Helvetica Neue" !important;
 	text-indent: 7px;
 	width: 16px;
 	height: 16px;
@@ -219,7 +217,7 @@ div[id=mark] {
 	position: relative;
 	z-index: 295;
 	margin-top: -1px;
-	border-bottom: 1px dashed;
+	border-bottom: 1px solid #000;
 	border-color: #444;
 	-webkit-transition: 0.2s linear;
 }
@@ -287,12 +285,9 @@ body div.line.selectedUser[highlight=false] .time {
 body div.line.selectedUser[highlight=false] {
     transition-property: border-top, border-bottom, background-color;
 	transition-duration: 0.5s, 0.5s, 0.5s;
-
   	z-index: 190;
   	position: relative;
-	border-top: 2px solid #000 !important;
-	border-bottom: 2px solid #000 !important;
-  	background-color: #e5ffff !important;
+  	background-color: #8d80ce !important;
 }
 
 /* PRIVMSG */
@@ -309,8 +304,6 @@ body div.line[ltype*=action][highlight=true] {
 	font-weight: normal;
  	padding: 2px 5px 2px 5px;
   	background-color: #e5ffff !important;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
 }
 
 body div[ltype*="privmsg"] .message {
@@ -377,8 +370,6 @@ body div.line[ltype*=off-the-record-encryption-status] {
 	background: #eee;
   	position: relative;
  	padding: 2px 5px 2px 5px;
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
 }
 
 /* off-the-record-encryption-status Message Event */
@@ -453,7 +444,7 @@ body[dir=ltr] div[ltype*=quit] .message:before {
 }
 
 body[dir=ltr] div[ltype*=nick] .message:before {
-	content:"•";
+	content:">";
   	color: #000;
   	/* margin-right: 0.4em; */
 }
@@ -473,7 +464,7 @@ body[dir=rtl] div[ltype*=quit] .message:before {
 }
 
 body[dir=rtl] div[ltype*=nick] .message:before {
-	content:"•";
+	content:">";
   	color: #000;
   	/* margin-left: 0.4em; */
 }
